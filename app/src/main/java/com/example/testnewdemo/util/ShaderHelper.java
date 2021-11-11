@@ -7,6 +7,9 @@ import static android.opengl.GLES20.glCreateShader;
 import android.opengl.GLES20;
 import android.util.Log;
 
+/**
+ * 着色器对象生成辅助类
+ */
 public class ShaderHelper {
     private static final String TAG = "ShaderHelper";
 
@@ -24,7 +27,8 @@ public class ShaderHelper {
             if (LoggerConfig.ON){
                 Log.w(TAG, "Could not create new shader." );
             }
+            return 0;
         }
-        return 0;
+        return shaderObjectId;
     }
 }

@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+/**
+ * 从资源中加载文本
+ */
 public class TextResourceReader {
     public static String readTextFileFromResource(Context context,int resourceId){
         StringBuilder body = new StringBuilder();

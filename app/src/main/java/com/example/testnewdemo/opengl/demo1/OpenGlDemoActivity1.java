@@ -14,6 +14,12 @@ import com.example.testnewdemo.util.Utils;
 
 /**
  * openGL demo1
+ *
+ * 借鉴博客：https://www.jianshu.com/p/0701d9c7f01b
+ *
+ *
+ * 1. 定义好物体的顶点，被读取到本地内存中，在绘制到屏幕的时候，需要通过管道（着色器）进行传输
+ * 2. 着色器会告诉GPU如何处理绘制数据。分为顶点着色器、片段着色器
  */
 public class OpenGlDemoActivity1 extends AppCompatActivity {
     private static final String TAG = "OpenGlDemoActivity1";
